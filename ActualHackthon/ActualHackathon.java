@@ -15,11 +15,11 @@ public class ActualHackathon {
 		JSONArray finalArray=new JSONArray();
 		String[] record;
 		String str=" ";
-		int i=0,count=1;
+		int count=1;
 		double sum=0;
 		double max=0;
 		while((br.readLine())!=null) {
-			if(i%2==0) {
+			
 				str=br.readLine();
 				record=str.split("\\s+");
 				Double x=(Double.parseDouble(record[2])/1024);
@@ -30,7 +30,7 @@ public class ActualHackathon {
 				String seconds = count+"s";
 				values.put(seconds,String.format("%.2f",x));
 				count++;
-			}
+			
 		}
 		double avg=sum/count;
 		finalvalues.put("AverageMemory(MB)",(String.format("%.2f", avg)));
