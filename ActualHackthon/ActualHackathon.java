@@ -1,4 +1,4 @@
-package practical;
+
 import java.io.*;
 
 import org.json.simple.JSONArray;
